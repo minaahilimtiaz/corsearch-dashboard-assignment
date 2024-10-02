@@ -8,8 +8,7 @@ $card-border: #c9c4c4;
   border-color: $card-border;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  max-width: 350px;
-  width: 100%;
+  width: 75%;
 
   // Popup the card on hover and increase the shadow
   &:hover {
