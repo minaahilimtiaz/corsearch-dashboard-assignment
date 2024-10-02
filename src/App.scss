@@ -1,0 +1,8 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #666060;
+
+.App {
+  color: $primary-color;
+  text-align: center;
+  font: 100% $font-stack;
+}

@@ -1,0 +1,54 @@
+$card-color: #ffffff;
+$card-border: #c9c4c4;
+
+.card {
+  background-color: $card-color;
+  padding: 16px;
+  border-radius: 8px;
+  border-color: $card-border;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  transition: transform 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+
+  // Popup the card on hover and increase the shadow
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.locationIcon {
+  color: #f6535e;
+}
+
+.websiteIcon {
+  color: #0077cc;
+}
+
+.website {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.25rem;
+
+  a {
+    color: #0077cc;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}
