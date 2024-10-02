@@ -7,9 +7,8 @@ $card-border: #c9c4c4;
   border-radius: 8px;
   border-color: $card-border;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 16px;
   transition: transform 0.3s ease;
-  max-width: 400px;
+  max-width: 350px;
   width: 100%;
 
   // Popup the card on hover and increase the shadow
@@ -47,8 +46,14 @@ $card-border: #c9c4c4;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .card {
-    max-width: 100%;
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 90%;
   }
 }

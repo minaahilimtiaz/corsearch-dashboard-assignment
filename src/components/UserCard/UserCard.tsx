@@ -38,7 +38,7 @@ const UserCard: React.FC<UserCardProps> = ({
       </div>
       <HorizontalIconRow
         icon={<BsGeoAltFill />}
-        text={`${address.street}, ${address.suite}, ${address.city} -${address.zipCode}`}
+        text={`${address.street}, ${address.suite}, ${address.city} -${address.zipcode}`}
         iconClass={styles.locationIcon}
       />
     </div>
