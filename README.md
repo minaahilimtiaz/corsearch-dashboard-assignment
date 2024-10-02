@@ -1,48 +1,86 @@
 # corsearch-dashboard-assignment
 
-# Getting Started with Create React App
+## Functionalities
+- Fetch user entries 
+- Display user entries on dashboard 
+- Sort the users by email in ascending and descending order 
+- Filter users by name 
+- Responsive design
+- Build reusable function components in React
+- Implement basic error handling
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Setup
 
-## Available Scripts
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/en/)
+- [Typescript](https://www.typescriptlang.org/download)
+- npm (Node Package Manager)
 
-In the project directory, you can run:
+### Environment vars
+This project uses the following environment variables:
 
-### `npm start`
+| Name                          | Description                         | Default Value                                  |
+| ----------------------------- | ------------------------------------| -----------------------------------------------|
+|REACT_APP_API_BASE_URL           | URL for backend server           | https://jsonplaceholder.typicode.com      |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installation
+Clone the repository:
+   ```
+  git clone git@github.com:minaahilimtiaz/corsearch-dashboard-assignment.git
+   cd corsearch-dashboard-assignment
+   ```
 
-### `npm test`
+Install the dependencies
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Running the Project
+### Starting the project
+To start the project in development mode:
 
-### `npm run build`
+```
+npm run start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Format
+To format the code files:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm run format
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app runs at:
+```
+http://localhost:3000/
+```
 
-### `npm run eject`
+# Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `react-icons`: Provides icons for Ant Design, a popular React UI library.
+- `@types/node`: TypeScript type definitions for Node.js, allowing for better development experience when working with Node.js APIs.
+- `@types/react`: TypeScript type definitions for React, improving development experience by providing type checking and IntelliSense for React components.
+- `axios`: A promise-based HTTP client for making requests to APIs, handling responses, and managing errors in a simple and elegant way.
+- `react`: A JavaScript library for building user interfaces, allowing developers to create reusable UI components.
+- `typescript`: A superset of JavaScript that adds static types, improving code quality and developer productivity through type checking and enhanced IDE support.
+- `@mui/material`: For utlising reusable UI components
+- `sass`: To style HTML elements used in React function components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Dev Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `prettier`: An opinionated code formatter that enforces a consistent style by parsing code and re-printing it with its rules.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Project Structure
+The folder structure of this app is explained below:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Name | Description |
+| ------------------------ | --------------------------------------------------------------------------------------------- |
+| **node_modules**         | Contains all  npm dependencies                                                            |
+| **src**                  | Contains  source code that will be compiled to the build dir                               |
+| **src/components**      | Reusable components used across multiple pages
+| **src/page**      | Contains the components for the different routes available in the web app, defining various pages users can navigate to. |
+| **src/api**     | Contains all the logic for integrating with backend endpoints, handling API calls and interactions with backend services. |
+| package.json             | Contains npm dependencies as well as build scripts   |
