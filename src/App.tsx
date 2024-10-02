@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import UserCard from "./components/UserCard/UserCard";
+import { fetchUsers } from "./api/user";
+import { User } from "./types/User";
 
 function App() {
+  const [usersList, setUsersList] = useState<User[]>([]);
+
+  const fetchUsersList = async () => {
+    try {
+      const data: User[] = await fetchUsers();
+      setUsersList(data);
+    } catch (err) {
+      alert(String(err));
+    }
+  };
+
+  useEffect(() => {
+    fetchUsersList();
+  }, []);
+
   return (
     <div className="App">
       <UserCard
@@ -15,6 +32,10 @@ function App() {
           suite: "Apt. 556",
           city: "Gwenborough",
           zipCode: "92998-3874",
+          geo: {
+            lat: "-37.3159",
+            lng: "81.1496",
+          },
         }}
       />
     </div>
