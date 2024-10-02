@@ -1,8 +1,10 @@
 $font-stack: Helvetica, sans-serif;
-$primary-color: #666060;
+$primary-color: #d8d2c2;
 
 .App {
-  color: $primary-color;
+  background-color: $primary-color;
   text-align: center;
   font: 100% $font-stack;
+  min-height: 100vh;
+  height: 100%;
 }
